@@ -5,9 +5,136 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background-color: #3F51B5;
+  height: 80px;
+  width: 100vw;
+  box-sizing:border-box;
+  padding: 0px 30px;
+  display: flex;
+
+  justify-content:space-between;
+  align-items: center;
+}
+
+.logoMain {
+ display: flex;
+ color: #ffffff;
+ /* margin: 0px 20px; */
+}
+
+.logoImage {
+  filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(112deg) brightness(106%) contrast(101%);
+  margin-right: 10px;
+}
+
+#cart {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor:pointer;
+}
+
+#cart span {
+  background-color: gray;
+  font-size: 12px;
+  margin-left: -8px;
+  padding: 0px 6px;
+  border-radius: 15px;
+  border: solid 2px white;
+}
+
+
+#overlay-back { 
+  position   : absolute; 
+  top        : 0; 
+  left       : 0; 
+  width      : 100%; 
+  height     : 100%; 
+  background : #000; 
+  opacity    : 0.6; 
+  filter     : alpha(opacity=60); 
+  z-index    : 5;
+} 
+
+#overlay { 
+  position : absolute; 
+  top      : 50%; 
+  left     : 50%; 
+  z-index  : 10;
+  background-color: white;
+}
+
+#showCart {
+  padding: 30px;
+}
+
+
+.home {
+  max-width: 600px;
+  font-weight:normal;
+  margin: 0 auto ;
+
+}
+
+.home h6{
+  font-size: 70px;
+  margin: 50px auto 30px auto;
+  font-weight: lighter;
+}
+
+.home a {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #3F51B5;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray
+}
+
+.home a:hover {
+  color: #3F51B5;
+  border: solid 1px #3F51B5;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 900px;
+  /* background-color: tomato; */
+}
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  box-shadow: .5px .5px 3px gray;
+  border-radius: 5px;
+  margin: 15px;
+  
+}
+
+#itemName {
+  margin: 5px 10px;
+  font-size: 20px;
+}
+
+#itemPrice {
+  margin: 5px 10px;
+  font-size: 13px
+}
+
+.addToCart button {
+  padding: 5px 25px;
+  margin: 8px 10px;
+  border: none;
+  box-shadow: .5px .5px 3px gray;
+  font-size: 20px;
 }
